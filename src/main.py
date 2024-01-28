@@ -18,8 +18,9 @@ token = '295809:6517005fc9455'
 
 def main():
 
+    TIMEOUT = 10
     CAPABILITIES = ['img', 'font', 'ai']
-    client = Client(session='session', time_out=10)
+    client = Client(session='session', time_out=TIMEOUT)
     for guid in groups:
         if guid.strip() == '':
             groups.remove(guid)
